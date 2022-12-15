@@ -3,17 +3,19 @@
     <table class="table" *ngIf="skills && skills.length>0">
         <thead>
             <tr>
-                
-                <th>Skills</th>
-                
+                <th>SkillID</th>
+                <th>SSkill</th>
+                <th>  </th>
             </tr>
         </thead>
         <tbody>
             <tr *ngFor="let s of skills">
+                <td>{{s.skillID}}</td>
+                <td>{{s.sSkill}}</td>
+               
                 
-                <td>{{s.SSkill}}</td>
-            
-            </tr>
+                
+            </tr> -->
         </tbody>
     </table>
     <p *ngIf="!skills || skills.length <=0">No Skills Found</p>

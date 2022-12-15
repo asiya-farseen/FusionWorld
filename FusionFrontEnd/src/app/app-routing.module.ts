@@ -1,21 +1,23 @@
-import { NgModule } from '@angular/core';
+import { Component, NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { AddSkillsComponent } from './components/add-skills/add-skills.component';
-import { ListSkillsComponent } from './components/list-skills/list-skills.component';
+
+import { AddSkilComponent } from './components/skil/add-skil/add-skil.component';
+import { ListSkillComponent } from './components/skil/list-skill/list-skill.component';
 
 const routes: Routes = [
   {
     path:'',
-    component:ListSkillsComponent
+    component:ListSkillComponent
   },
   {
-    path:'listTheSkills',
-    component:ListSkillsComponent
+    path:'skills/list',
+    component:ListSkillComponent
   },
   {
     path:'skills/add',
-    component:AddSkillsComponent
-  }
+    component:AddSkilComponent
+  },
+
 ];
 
 @NgModule({

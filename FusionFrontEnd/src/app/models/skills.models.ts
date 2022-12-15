@@ -1,5 +1,5 @@
 export interface Skill{
-    SkillID:string;
-    SSkill:string;
+    skillID:string;
+    sSkill:string;
   
 }

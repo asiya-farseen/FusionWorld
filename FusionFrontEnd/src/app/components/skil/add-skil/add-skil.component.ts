@@ -1,25 +1,29 @@
 import { Component } from '@angular/core';
 import { Skill } from 'src/app/models/skills.models';
-
+import { ToastrService } from 'ngx-toastr';
 import { SkillsService } from 'src/app/Services/skills.service';
 
 @Component({
-  selector: 'app-add-skills',
-  templateUrl: './add-skills.component.html',
-  styleUrls: ['./add-skills.component.css']
+  selector: 'app-add-skil',
+  templateUrl: './add-skil.component.html',
+  styleUrls: ['./add-skil.component.css']
 })
-export class AddSkillsComponent {
+export class AddSkilComponent {
+
   addskillRequest:Skill={
-    SkillID:'',
-    SSkill:'',
+    skillID:'',
+    sSkill:'',
    
   }
   constructor(private skillsService:SkillsService) { }
 
+
   ngOnInit(): void {
   }
-
+ 
+  
   AddSkills(){
+   
     
     // console.log(this.addEmployeeRequest.id);
     // console.log(this.addEmployeeRequest.name);
